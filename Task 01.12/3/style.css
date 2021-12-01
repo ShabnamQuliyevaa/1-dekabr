@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.password {
+    outline: none;
+    border-color: blue;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 125px;
+    right: 42%;
+}
+
+#check {
+    display: none;
+}
+
+span {
+    position: absolute;
+}
+
+#check:checked + span {
+    background-color: #fff;
+    width: 60px;
+    height: 30px;
+    top: 125px;
+    right: 42%;
+}

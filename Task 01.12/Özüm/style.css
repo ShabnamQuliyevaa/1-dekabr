@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+label {
+    background-color: brown;
+    width: 80px;
+    height: 35px;
+    border-radius: 16px;
+    position: relative;
+    /* display: inline-block; */
+}
+
+input {
+    display: none;
+}
+
+.div {
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 16px;
+    position: absolute;
+}
+
+span {
+    position: absolute;
+}
+
+
+input:checked + span {
+    background-color: aqua;
+    width: 80px;
+    height: 35px;
+    border-radius: 16px;
+}
+
+input:checked + .div {
+    display: flex;
+    justify-content: right;
+}

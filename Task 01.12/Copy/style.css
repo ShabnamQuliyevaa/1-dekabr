@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+label {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+input {
+    display: none;
+}
+
+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+span::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: white;
+
+}
+
+input:checked + span {
+    background-color: green;
+}
+
+input:checked + span::before {
+    transform: translate(28px, -50%);
+}
